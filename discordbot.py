@@ -26,13 +26,13 @@ token = os.environ['DISCORD_BOT_TOKEN']
 async def on_command_error(ctx, error):
     await ctx.send(str(error))
 
-@bot.event
+@client.event
 async def on_ready():
     # 起動時にメッセージの送信
     channel = client.get_channel(CHANNEL_ID)
     await channel.send('リブラ、準備完了です！')
 
-@bot.event
+@client.event
 async def on_message(message):
 
     global ModeFlag
