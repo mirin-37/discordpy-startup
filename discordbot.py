@@ -18,13 +18,13 @@ client = discord.Client()
 ModeFlag = 0
 
 
-bot = commands.Bot(command_prefix='/')
+#bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
-@bot.event
-async def on_command_error(ctx, error):
-    await ctx.send(str(error))
+#@bot.event
+#async def on_command_error(ctx, error):
+#    await ctx.send(str(error))
 
 @client.event
 async def on_ready():
@@ -199,4 +199,4 @@ async def on_message(message):
 #    await ctx.send('pong')
 
 
-bot.run(token)
+client.run(token)
