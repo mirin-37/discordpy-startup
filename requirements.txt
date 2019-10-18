@@ -1,1 +1,2 @@
 discord.py[voice]
+google == 2.0.2
