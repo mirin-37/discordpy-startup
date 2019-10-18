@@ -8,7 +8,6 @@ import traceback
 
 from discord.ext import commands
 from discord.ext import tasks
-from datetime import datetime
 from googlesearch import search
 
 CHANNEL_ID = 629698076646309890 #ログオフ、ログオンメッセージ用のチャンネルID
