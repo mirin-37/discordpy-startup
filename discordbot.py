@@ -29,8 +29,8 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @client.event
 async def on_ready():
     # 起動時にメッセージの送信
-    channel = client.get_channel(CHANNEL_ID)
-    await channel.send('リブラ、準備完了です！')
+    # channel = client.get_channel(CHANNEL_ID)
+    # await channel.send('リブラ、準備完了です！')
 
 @client.event
 async def on_message(message):
